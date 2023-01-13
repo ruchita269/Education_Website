@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display:flex;
+    justify-content: center;
+}
+.logo img{
+    width: 36%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
+
+}
+.nav-list{
+width: 70%;
+/* background: rgb(24, 13, 24);  */
+display:flex;
+/* justify-content: center; */
+align-items: center;  
+}
+.nav-list li{
+    padding: 16px 26px;
+    list-style: none;
+    font-size: 20px;
+     font-family: 'Ubuntu', sans-serif;;
+   
+}
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+   
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:rgb(101, 102, 101);
+   
+}
+.rightnav{
+    text-align: right;
+    width: 30%;
+    /* background: aquamarine; */
+
+}
+.fristSection{
+    height: 100vh;
+}
+
+#search{
+  padding: 5px;  
+  font-size: 17px;
+  border: 2px solid rgb(133, 127, 127);
+  border-radius: 9px;
+}
+.background{
+background: rgba(0,0,0,0.15) url('https://source.unsplash.com/random/900x700/?laptops');
+background-size: cover;
+background-blend-mode:darken ;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+    
+  
+
+   
+}
+.secondHalf img{
+    width: 158%;
+    margin: 5px;
+    border: 4px solid  black;
+    display: block;
+    border-radius: 150px;
+    padding: 2px;
+}
+.text-big{
+font-size: 49px;
+}
+.text-small{
+font-size: 17px;
+
+}
+.btn{
+    padding: 10px 20px;
+    margin: 7px 0;
+    border: 2px solid whitesmoke ;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    color: azure
+}
+.btn-sm{
+    padding: 6px 20px;
+    vertical-align: middle;
+}
+.btnDark{
+    background-color: rgb(255, 253, 251);
+    color: black;
+    border: 2px solid rgb(6, 6, 6);
+    
+}
+
+
+
+.section{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    max-width: 80%;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 4px;
+}
+.sectionTag{
+    
+  padding: 16px 0px;
+
+}
+.sectionSubTag{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.paras{
+    padding:0px 50px ;
+}
+.sec-left{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    max-width: 80%;
+    margin:auto;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+ .thm{ 
+  height: 240px;
+  width: 241px;
+  border: 2px solid black;
+  border-radius: 7px;
+
+ }
+.contact{
+    background-color: rgb(197, 197, 198);
+    height:35vh;
+    text-align: center;
+}
+
+ .text-center{
+    text-align: center;
+}
+/* .text-Bar{
+    width:62% ;
+    margin: auto;
+ }   */
+
+
+ .text-bar input{
+width: 50%;
+font-size: 16px;
+border: 2px solid gray;
+border-radius: 6px;
+margin: 14px ;
+padding: 5px 3px;
+
+ }
+#Desc{
+    width: 48%;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+Footer{
+    background:rgb(12, 66, 146);
+    
+    text-align: center;
+    font-size: 15PX;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15%;
+  }
+  .line{
+    width: 33px;
+    height:4px;
+    margin: 5px 3px;
+    background-color: white;
+} 
+/* .hnav{ */
+    /* height: 22px; */
+  /* }  */
+@media only screen and (max-width:1157px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .Navbar{
+        height: 400px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 85px;
+    }
+    .v-class-resp{
+    opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+}
+
